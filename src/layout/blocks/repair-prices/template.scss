@@ -1,0 +1,122 @@
+.repair-prices {
+	padding: 62px 0;
+	@include section-shadow;
+	background: #fff;
+	@include max-screen(1600px) {
+		padding: 30px 0;
+	}
+	
+
+	&-line {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		@include max-screen(800px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	&__text {
+		font-size: 25px;
+		margin-right: 20px;
+		@include max-screen(800px) {
+			margin: 10px 0;
+		}
+	}
+	&__btn {
+		min-width: 254px;
+	}
+
+	.container {
+		max-width: 1264px;
+		@include max-screen(1300px) {
+			max-width: 1200px;
+		}
+	}
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+		@include max-screen(1200px) {
+			margin-bottom: 15px;
+		}
+		@include max-screen(599px) {
+			flex-wrap: nowrap;
+			overflow: auto;
+		}
+	}
+	.item {
+		background: #FFFFFF;
+		box-shadow: 0px 4px 15px rgba(129, 151, 231, 0.15);
+		border-radius: 10px;
+		overflow: hidden;
+		width: 48%;
+		margin: 1%;
+		display: flex;
+		@include max-screen(800px) {
+			flex-direction: column;
+		}
+		@include max-screen(599px) {
+			min-width: 230px;
+			max-width: 230px;
+			margin: 10px;
+		}
+		&__img {
+			width: 30%;
+			object-fit: cover;
+			@include max-screen(800px) {
+				width: 100%;
+				height: 125px;
+			}
+		}
+		&-inner {
+			padding: 30px;
+			@include max-screen(1200px) {
+				padding: 15px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+		&__title {
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 10px;
+			@include max-screen(1200px) {
+				font-size: 16px;
+			}
+			@include max-screen(599px) {
+				font-size: 14px;
+			}
+		}
+		&-price {
+			@include max-screen(1200px) {
+				margin-top: auto;
+			}
+			&__text {
+				display: inline-block;
+				font-size: 16px;
+				color: $text2;
+				@include max-screen(1200px) {
+					font-size: 14px;
+					margin-bottom: 10px;
+					width: 100%;
+				}
+			}
+			&__num {
+				display: inline-block;
+				font-weight: 700;
+				color: $orange;
+				font-size: 25px;
+				margin-left: 16px;
+				@include max-screen(1200px) {
+					font-size: 20px;
+					margin: 0;
+				}
+			}
+		}
+	}
+}

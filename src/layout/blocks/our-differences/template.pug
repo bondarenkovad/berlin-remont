@@ -1,0 +1,41 @@
+mixin our-differences(blockTitle)
+	section.our-differences
+		+section-shape
+		.container
+			.block-title !{blockTitle}
+			.inner
+				.col.col_green
+					+img('header','logo', 'logo-img', '2')
+					.col__title Так делаем мы
+					.card
+						.card__text Новый усиленный каркас на балконе подходит под любое остекление
+						+img('our-differences','img1','card__img', '1')
+						.card__icon
+							+icon('check')
+					.card
+						.card__text Усиление существующего парапета металлом который не отнимает место внутри по сравнению с пеноблоком
+						+img('our-differences','img2','card__img', '1')
+						.card__icon
+							+icon('check')
+					.card
+						.card__text Капитальное основание под остекление от пола и до потолка, выполняется из  специально подобранных металлических конструкци.
+						+img('our-differences','img3','card__img', '1')
+						.card__icon
+							+icon('check')
+				.col.col_red
+					.col__title Так делают наши конкуренты
+					.card
+						+img('our-differences','img4','card__img', '1')
+						.card__text Усиленипарпета брусом подходит разве что под легкий алюминий
+						.card__icon
+							+icon('close')
+					.card
+						+img('our-differences','img5','card__img', '1')
+						.card__text Пеноблок занимает место внутри до 100мм, уменьшая внутреннюю площадь и нагружает основание балкона
+						.card__icon
+							+icon('close')
+					.card
+						+img('our-differences','img6','card__img', '1')
+						.card__text Деревянный каркас не надежный вариант, который прослужит пару лет, может рассохнуться и повредить конструкцию остекления
+						.card__icon
+							+icon('close')

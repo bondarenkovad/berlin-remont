@@ -1,0 +1,9 @@
+mixin category-about(img,text,text2)
+	section.category-about
+		.container
+			.inner
+				img.category-about__img(src="img/category-about/" + img, alt="")
+				.text-container !{text}
+			if text2 != ''
+				.text-container !{text2}
+			else

@@ -1,0 +1,74 @@
+mixin color-solutions(blockTitle)
+	section.color-solutions
+		.container
+			.color-solutions-left
+				img.color-solutions__frame(srcset=img+"color-solutions/lamination/webp/v0-1.webp" src=img+"color-solutions/lamination/v0-1.png", alt="")
+				img.color-solutions__handle(srcset=img+"color-solutions/handle/webp/v1-1.webp" src=img+"color-solutions/handle/v1-1.png", alt="")
+			.color-solutions-right
+				.block-title.block-title_left !{blockTitle}
+				.color-solutions-right-inner
+					.color-solutions__title Варианты ламинации
+					.color-solutions-wrap
+						+slider-arrows
+						.slider-wrap.swiper-container
+							.slider.slider-frame.swiper-wrapper
+								.slider-slide.swiper-slide.active(data-name="v0-1.png" data-name2="webp/v0-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v0.webp" src=img+"color-solutions/lamination/v0.png", alt="")
+									.slider-slide__text Без ламинации
+								.slider-slide.swiper-slide(data-name="v1-1.png" data-name2="webp/v1-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v1.webp" src=img+"color-solutions/lamination/v1.png", alt="")
+									.slider-slide__text Дуб Шеффилд Светлый
+								.slider-slide.swiper-slide(data-name="v2-1.png" data-name2="webp/v2-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v2.webp" src=img+"color-solutions/lamination/v2.png", alt="")
+									.slider-slide__text Натуральный дуб
+								.slider-slide.swiper-slide(data-name="v3-1.png" data-name2="webp/v3-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v3.webp" src=img+"color-solutions/lamination/v3.png", alt="")
+									.slider-slide__text Темный дуб
+								.slider-slide.swiper-slide(data-name="v4-1.png" data-name2="webp/v4-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v4.webp" src=img+"color-solutions/lamination/v4.png", alt="")
+									.slider-slide__text Светлый дуб
+								.slider-slide.swiper-slide(data-name="v5-1.png" data-name2="webp/v5-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v5.webp" src=img+"color-solutions/lamination/v5.png", alt="")
+									.slider-slide__text Орегон
+								.slider-slide.swiper-slide(data-name="v6-1.png" data-name2="webp/v6-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v6.webp" src=img+"color-solutions/lamination/v6.png", alt="")
+									.slider-slide__text Горная сосна
+								.slider-slide.swiper-slide(data-name="v7-1.png" data-name2="webp/v7-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v7.webp" src=img+"color-solutions/lamination/v7.png", alt="")
+									.slider-slide__text Коричневый каштан
+								.slider-slide.swiper-slide(data-name="v8-1.png" data-name2="webp/v8-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v8.webp" src=img+"color-solutions/lamination/v8.png", alt="")
+									.slider-slide__text Розовая береза
+								.slider-slide.swiper-slide(data-name="v9-1.png" data-name2="webp/v9-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/lamination/webp/v9.webp" src=img+"color-solutions/lamination/v9.png", alt="")
+									.slider-slide__text Золотой орех
+				.color-solutions-right-inner
+					.color-solutions__title Цвет ручки
+					.color-solutions-wrap
+						+slider-arrows
+						.slider-wrap.swiper-container
+							.slider.slider-handle.swiper-wrapper
+								.slider-slide.swiper-slide.active(data-name="v1-1.png" data-name2="webp/v1-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v1.webp" src=img+"color-solutions/handle/v1.png", alt="")
+									.slider-slide__text Белый
+								.slider-slide.swiper-slide(data-name="v2-1.png" data-name2="webp/v2-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v2.webp" src=img+"color-solutions/handle/v2.png", alt="")
+									.slider-slide__text Матовый титан
+								.slider-slide.swiper-slide(data-name="v3-1.png" data-name2="webp/v3-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v3.webp" src=img+"color-solutions/handle/v3.png", alt="")
+									.slider-slide__text Натуральное серебро
+								.slider-slide.swiper-slide(data-name="v4-1.png" data-name2="webp/v4-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v4.webp" src=img+"color-solutions/handle/v4.png", alt="")
+									.slider-slide__text Шампань
+								.slider-slide.swiper-slide(data-name="v5-1.png" data-name2="webp/v5-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v5.webp" src=img+"color-solutions/handle/v5.png", alt="")
+									.slider-slide__text Средняя бронза
+								.slider-slide.swiper-slide(data-name="v6-1.png" data-name2="webp/v6-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v6.webp" src=img+"color-solutions/handle/v6.png", alt="")
+									.slider-slide__text Матовая латунь
+								.slider-slide.swiper-slide(data-name="v7-1.png" data-name2="webp/v7-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v7.webp" src=img+"color-solutions/handle/v7.png", alt="")
+									.slider-slide__text Серо-коричневый
+								.slider-slide.swiper-slide(data-name="v8-1.png" data-name2="webp/v8-1.webp")
+									img.slider-slide__img(srcset=img+"color-solutions/handle/webp/v8.webp" src=img+"color-solutions/handle/v8.png", alt="")
+									.slider-slide__text Бронза

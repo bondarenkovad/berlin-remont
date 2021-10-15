@@ -1,0 +1,110 @@
+.warming-compare {
+	padding: 30px 0;
+	@include max-screen(1200px) {
+		padding: 15px 0;
+	}
+
+	&-list {
+		width: 30%;
+		background: $gray2;
+		padding: 66px 94px 0;
+		@include max-screen(1600px) {
+			padding: 66px 20px 0;
+		}
+		@include max-screen(599px) {
+			width: 50%;
+			padding: 40px 10px 0;
+		}
+		&__item {
+			color: #fff;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1.2;
+			height: 66px;
+			display: flex;
+			align-items: center;
+			@include max-screen(1600px) {
+				font-size: 16px;
+			}
+			@include max-screen(700px) {
+				font-size: 14px;
+			}
+			@include max-screen(599px) {
+				font-size: 12px;
+				word-wrap: break-word;
+				height: 40px;
+			}
+		}
+	}
+	&-table {
+		width: 100%;
+		@include max-screen(1200px) {
+			width: 800px;
+		}
+		&-wrap {
+			width: 70%;
+			@include max-screen(599px) {
+				width: 50%;
+			}
+			@include max-screen(1200px) {
+				overflow: auto;
+				@include scroll(null, 4px, black, gray, null, null)
+			}
+		}
+		thead {
+			color: $gray2;
+			font-size: 20px;
+			font-weight: 700;
+			@include max-screen(1600px) {
+				font-size: 18px;
+			}
+		}
+		tbody {
+			font-weight: 700;
+			font-size: 18px;
+			color: $gray2;
+			@include max-screen(1600px) {
+				font-size: 14px;
+			}
+			@include max-screen(599px) {
+				font-size: 12px;
+			}
+			tr {
+				&:nth-child(odd) {
+					background: $shapeBg;
+				}
+				&:nth-child(even) {
+					background: $shapeBg2;
+				}
+			}
+		}
+		td {
+			text-align: center;
+			height: 66px;
+			vertical-align: middle;
+			@include max-screen(599px) {
+				height: 40px;
+			}
+			&:not(:last-child) {
+				border-right: 1px solid $gray3;
+			}
+		}
+	}
+	.inner {
+		overflow: hidden;
+		display: flex;
+		flex-wrap: wrap;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 30px rgba(129, 151, 231, 0.15);
+		border-radius: 15px;
+	}
+	.wc-icon {
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		@include max-screen(599px) {
+			width: 22px;
+			height: 22px;
+		}
+	}
+}

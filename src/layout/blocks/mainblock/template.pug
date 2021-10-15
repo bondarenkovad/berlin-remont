@@ -1,0 +1,42 @@
+mixin mainblock(title, title2, bgPic)
+	section.mainblock(style="background-image: url('img/mainblock/" + bgPic + ".jpg');")
+		.container
+			.mainblock-left
+				+mainblock-shape
+				if title2 != ''
+					.mainblock__title.mainblock__title_small !{title2}
+				else 
+					.mainblock__title !{title}
+				.mainblock-price
+					.mainblock-price__text от
+					.mainblock-price__num 15 000 ₽
+				.mainblock__text Ремонтируем и восстанавливаем балконы "под ключ" <br> даже разрушенные на 100%
+				.mainblock-line
+					.mainblock__text <b>Замер бесплатно! Готовы выехать сейчас</b> 
+					a.btn-call(href="#")
+						.btn-call__icon
+							+icon('size')
+						.btn-call__text Вызвать замерщика
+				.mainblock-items
+					.mainblock-item
+						.mainblock-item__num 7-10
+						.mainblock-item__text дней от заказа <br> до сдачи
+					.mainblock-item
+						.mainblock-item__num 100%
+						.mainblock-item__text довольных <br> клиентов
+					.mainblock-item
+						.mainblock-item__num 19
+						.mainblock-item__text лет работы <br> с гарантией
+			.mainblock-right
+				.form-wrap
+					.form-title ПОЛУЧИТЕ <br> ЭКОНОМИЮ <span>50%</span>
+					form.form(action="#")
+						.form-group
+							.form-item
+								input.form__field(type="text" placeholder="Ваше имя" name="mainblock_name")
+							.form-item
+								input.form__field(type="tel" placeholder="Ваш телефон" name="mainblock_tel")
+						.form-controls
+							button.btn.form__submit(type="submit") Заявка на рассрочку
+					.form-info
+						.form__text * Нажимая кнопку, вы соглашаетесь <br> с условиями <a href="#">политики конфиденциальности</a>

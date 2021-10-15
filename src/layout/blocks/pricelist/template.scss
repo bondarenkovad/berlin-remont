@@ -1,0 +1,110 @@
+.pricelist {
+	padding: 45px 0;
+	@include max-screen(1600px) {
+		padding: 30px 0;
+	}
+
+	.tabs {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		&-list {
+			width: 25%;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 30px rgba(129, 151, 231, 0.15);
+			border-radius: 15px;
+			padding: 38px 50px;
+			@include max-screen(1200px) {
+				width: 100%;
+				display: flex;
+				overflow: auto;
+				flex-wrap: nowrap;
+				padding: 15px;
+				margin-bottom: 15px;
+			}
+			&-item {
+				@include max-screen(1200px) {
+					min-width: 270px;
+					max-width: 270px;
+				}
+				@include max-screen(599px) {
+					max-width: 150px;
+					min-width: 150px;
+				}
+				&:not(:last-child) {
+					margin-bottom: 45px;
+					@include max-screen(1200px) {
+						margin: 0 10px 0 0;
+					}
+				}
+			}
+			&__link {
+				text-decoration: none;
+				color: $title;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 1.2;
+				display: block;
+				width: 100%;
+				@include max-screen(1600px) {
+					font-size: 16px;
+				}
+				@include max-screen(599px) {
+					font-size: 14px;
+				}
+			}
+		}
+		&-content {
+			width: 73%;
+			padding: 38px 50px;
+			background: #FFFFFF;
+			box-shadow: 0px 4px 30px rgba(129, 151, 231, 0.15);
+			border-radius: 15px;
+			@include max-screen(1200px) {
+				width: 100%;
+				padding: 15px;
+			}
+		}
+	}
+	table {
+		width: 100%;
+		font-size: 15px;
+		@include max-screen(599px) {
+			font-size: 12px;
+		}
+
+		tr {
+			position: relative;
+			z-index: 1;
+			display: flex;
+
+			&:nth-child(even) {
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: -25px;
+					right: -25px;
+					top: 0;
+					bottom: 0;
+					background: $lightGray3;
+					z-index: -1;
+					border-radius: 30px;
+					@include max-screen(599px) {
+						border-radius: 0;
+					}
+				}
+			}
+		}
+
+		td {
+			padding: 10px 0;
+			width: 70%;
+			&:last-child {
+				text-align: right;
+				width: 30%;
+			}
+		}
+	}
+}

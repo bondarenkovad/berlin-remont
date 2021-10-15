@@ -1,0 +1,130 @@
+.installers-quality {
+	padding: 70px 0 45px;
+	@include max-screen(1600px) {
+		padding: 35px 0;
+	}
+	@include max-screen(599px) {
+		padding: 20px 0 0;
+	}
+
+	.container {
+		max-width: 1500px;
+		@include max-screen(1500px) {
+			max-width: 1200px;
+		}
+	}
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.col {
+		width: 30%;
+		@include max-screen(1200px) {
+			width: 48%;
+			margin: 0 1%;
+		}
+		@include max-screen(599px) {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+			padding-bottom: 20px;
+			overflow: auto;
+			width: 100%;
+			margin: 10px 0;
+		}
+		&_left {
+			text-align: right;
+			.item {
+				@include max-screen(700px) {
+					flex-direction: column-reverse;
+				}
+			}
+		}
+		&_middle {
+			width: 40%;
+			position: relative;
+			@include max-screen(1200px) {
+				display: none;
+			}
+		}
+		&_right {
+			text-align: left;
+		}
+	}
+	.man {
+		display: block;
+		width: 75%;
+		margin: 0 auto;
+		@include max-screen(1200px) {
+			display: none;
+		}
+	}
+	&-shape {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 5%);
+		z-index: -1;
+		@include max-screen(1200px) {
+			display: none;
+		}
+	}
+	.item {
+		display: flex;
+		flex-wrap: wrap;
+		@include max-screen(700px) {
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
+		@include max-screen(599px) {
+			min-width: 180px;
+			max-width: 180px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 30px;
+			@include max-screen(599px) {
+				margin: 0;
+			}
+		}
+		&-inner {
+			line-height: 1.4;
+			padding: 0 15px;
+			width: calc(100% - 70px);
+			@include max-screen(700px) {
+				width: 100%;
+				margin-top: 10px;
+			}
+		}
+		&__title {
+			font-weight: 700;
+			font-size: 20px;
+			@include max-screen(599px) {
+				font-size: 14px;
+			}
+		}
+		&__text {
+			font-family: $secondFont;
+			font-size: 16px;
+			width: 100%;
+			@include max-screen(599px) {
+				font-size: 12px;
+			}
+		}
+		&-icon {
+			width: 70px;
+			height: 70px;
+			border-radius: 100%;
+			background: $lightGray;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__icon {
+			display: inline-block;
+			max-width: 40px;
+			max-height: 40px;
+		}
+	}
+}

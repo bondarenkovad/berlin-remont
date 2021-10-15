@@ -1,0 +1,30 @@
+mixin panorama(blockTitle, blockText)
+	section.panorama
+		.container
+			.block-text !{blockText}
+			.block-title !{blockTitle}
+			.inner
+				+slider-arrows
+				.swiper-container
+					.slider.swiper-wrapper
+						.slider-slide.swiper-slide
+							a.slider-slide-link(href="#") 
+								+img('panorama','img1','slider-slide__img','1')
+							.slider-slide__text Ремонт и остекление ПВХ с выносом, окна Калева и отделкой
+						.slider-slide.swiper-slide
+							a.slider-slide-link(href="#") 
+								+img('panorama','img2','slider-slide__img','1')
+							.slider-slide__text Ремонт балкона и остекление окнами Калева Design под ключ
+						.slider-slide.swiper-slide
+							a.slider-slide-link(href="#") 
+								+img('panorama','img3','slider-slide__img','1')
+							.slider-slide__text Ремонт и остекление ПВХ с выносом, окна Калева и отделкой
+						.slider-slide.swiper-slide
+							a.slider-slide-link(href="#") 
+								+img('panorama','img1','slider-slide__img','1')
+							.slider-slide__text Ремонт и остекление ПВХ с выносом, окна Калева и отделкой
+						.slider-slide.swiper-slide
+							a.slider-slide-link(href="#") 
+								+img('panorama','img2','slider-slide__img','1')
+							.slider-slide__text Ремонт и остекление ПВХ с выносом, окна Калева и отделкой
+

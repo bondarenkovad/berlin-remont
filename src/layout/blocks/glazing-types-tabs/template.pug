@@ -1,0 +1,181 @@
+mixin glazing-types-tabs(blockTitle)
+	section.glazing-types-tabs
+		.container
+			.block-title !{blockTitle}
+			.tabs
+				ul.tabs-list
+					li.tabs-list-item
+						a.tabs-list__link.active(href="#" data-tab="glazing-types-tabs-tab1") Теплое остекление
+					li.tabs-list-item
+						a.tabs-list__link(href="#" data-tab="glazing-types-tabs-tab2") Холодное остекление
+					li.tabs-list-item
+						a.tabs-list__link(href="#" data-tab="glazing-types-tabs-tab3") Полутеплое остекление
+				.tabs-content
+					.tabs-tab(data-tab="glazing-types-tabs-tab2")
+						.tabs-tab-inner
+							.tabs-tab-left
+								.text-container
+									h2 Теплое остекление
+									p Воздушное светлое помещение с лаконичным дизайном – ничто не отвлекает от отдыха и размеренного течения теплой беседы за чашечкой чая. Здесь хорошо ловить последние лучи заходящего солнца, слушать пение птиц и любоваться красками летнего вечернего неба. Для экономии пространства остекление может
+								.tabs-tab-img
+									.temperature
+										.temperature-item.temperature-item_from
+											.temperature-item__text На улице
+											.temperature-item__num -20
+										.temperature-item.temperature-item_to
+											.temperature-item__text Внутри
+											.temperature-item__num +22
+									+img('glazing-types-tabs','img1','tabs-tab__img','1')
+							.tabs-tab-right
+								.tabs-tab__title Профили остекления
+								.tabs-cards
+									.tabs-card
+										.tabs-card__title Раздвижное
+										+img('glazing-types-tabs','card1','tabs-card__img','1')
+										.tabs-card__name REHAU Delight 70мм
+										.tabs-card__price от 8 923 ₽
+										ul.tabs-card__list
+											li
+												span Армирование
+												span <b>2мм</b>
+											li
+												span Стеклопакет
+												span <b>32мм</b>
+											li
+												span Фурнитура
+												span <b>ROTO</b>
+											li
+												span Монтаж
+												span <b>премиум</b>
+										a.tabs-card__link.btn(href="#") заказать
+									.tabs-card
+										.tabs-card__title Распашное
+										+img('glazing-types-tabs','card2','tabs-card__img','1')
+										.tabs-card__name GEALAN S9000 82мм
+										.tabs-card__price от 8 923 ₽
+										ul.tabs-card__list
+											li
+												span Армирование
+												span <b>2мм</b>
+											li
+												span Стеклопакет
+												span <b>32мм</b>
+											li
+												span Фурнитура
+												span <b>ROTO</b>
+											li
+												span Монтаж
+												span <b>премиум</b>
+										a.tabs-card__link.btn(href="#") заказать
+					.tabs-tab.active(data-tab="glazing-types-tabs-tab1")
+						.tabs-tab-inner
+							.tabs-tab-left
+								.text-container
+									h2 Холодное остекление
+									p Воздушное светлое помещение с лаконичным дизайном – ничто не отвлекает от отдыха и размеренного течения теплой беседы за чашечкой чая. Здесь хорошо ловить последние лучи заходящего солнца, слушать пение птиц и любоваться красками летнего вечернего неба. Для экономии пространства остекление может
+								.tabs-tab-img
+									.temperature
+										.temperature-item.temperature-item_from
+											.temperature-item__text На улице
+											.temperature-item__num -20
+										.temperature-item.temperature-item_to
+											.temperature-item__text Внутри
+											.temperature-item__num +22
+									+img('glazing-types-tabs','img1','tabs-tab__img','1')
+							.tabs-tab-right
+								.tabs-tab__title Профили остекления
+								.tabs-cards
+									.tabs-card
+										.tabs-card__title Раздвижное
+										+img('glazing-types-tabs','card1','tabs-card__img','1')
+										.tabs-card__name REHAU Delight 70мм
+										.tabs-card__price от 8 923 ₽
+										ul.tabs-card__list
+											li
+												span Армирование
+												span <b>2мм</b>
+											li
+												span Стеклопакет
+												span <b>32мм</b>
+											li
+												span Фурнитура
+												span <b>ROTO</b>
+											li
+												span Монтаж
+												span <b>премиум</b>
+										a.tabs-card__link.btn(href="#") заказать
+									.tabs-card
+										.tabs-card__title Распашное
+										+img('glazing-types-tabs','card2','tabs-card__img','1')
+										.tabs-card__name GEALAN S9000 82мм
+										.tabs-card__price от 8 923 ₽
+										ul.tabs-card__list
+											li
+												span Армирование
+												span <b>2мм</b>
+											li
+												span Стеклопакет
+												span <b>32мм</b>
+											li
+												span Фурнитура
+												span <b>ROTO</b>
+											li
+												span Монтаж
+												span <b>премиум</b>
+										a.tabs-card__link.btn(href="#") заказать
+					.tabs-tab(data-tab="glazing-types-tabs-tab3")
+						.tabs-tab-inner
+							.tabs-tab-left
+								.text-container
+									h2 Полутеплое остекление
+									p Воздушное светлое помещение с лаконичным дизайном – ничто не отвлекает от отдыха и размеренного течения теплой беседы за чашечкой чая. Здесь хорошо ловить последние лучи заходящего солнца, слушать пение птиц и любоваться красками летнего вечернего неба. Для экономии пространства остекление может
+								.tabs-tab-img
+									.temperature
+										.temperature-item.temperature-item_from
+											.temperature-item__text На улице
+											.temperature-item__num -20
+										.temperature-item.temperature-item_to
+											.temperature-item__text Внутри
+											.temperature-item__num +22
+									+img('glazing-types-tabs','img1','tabs-tab__img','1')
+							.tabs-tab-right
+								.tabs-tab__title Профили остекления
+								.tabs-cards
+									.tabs-card
+										.tabs-card__title Раздвижное
+										+img('glazing-types-tabs','card1','tabs-card__img','1')
+										.tabs-card__name REHAU Delight 70мм
+										.tabs-card__price от 8 923 ₽
+										ul.tabs-card__list
+											li
+												span Армирование
+												span <b>2мм</b>
+											li
+												span Стеклопакет
+												span <b>32мм</b>
+											li
+												span Фурнитура
+												span <b>ROTO</b>
+											li
+												span Монтаж
+												span <b>премиум</b>
+										a.tabs-card__link.btn(href="#") заказать
+									.tabs-card
+										.tabs-card__title Распашное
+										+img('glazing-types-tabs','card2','tabs-card__img','1')
+										.tabs-card__name GEALAN S9000 82мм
+										.tabs-card__price от 8 923 ₽
+										ul.tabs-card__list
+											li
+												span Армирование
+												span <b>2мм</b>
+											li
+												span Стеклопакет
+												span <b>32мм</b>
+											li
+												span Фурнитура
+												span <b>ROTO</b>
+											li
+												span Монтаж
+												span <b>премиум</b>
+										a.tabs-card__link.btn(href="#") заказать

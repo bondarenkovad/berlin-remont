@@ -1,0 +1,86 @@
+.certificates {
+	padding: 90px 0;
+	overflow: hidden;
+	@include max-screen(1600px) {
+		padding: 50px 0;
+	}
+
+	.icon {
+		display: inline-block;
+
+		&-loupe {
+			width: 35px;
+		}
+	}
+
+	.container {
+		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	.inner {
+		width: 34%;
+		margin-left: 75px;
+		@include max-screen(1200px) {
+			width: 100%;
+			margin: 0;
+			order: -1;
+		}
+	}
+	.block-title {
+		text-align: left;
+	}
+	.slider-wrap {
+		width: 55%;
+		@include max-screen(1200px) {
+			width: 100%;
+		}
+	}
+	.slider {
+		&-wrap {
+			margin-left: -125px;
+			@include max-screen(1200px) {
+				margin: 0;
+			}
+		}
+		&-slide {
+			display: block;
+			position: relative;
+			width: 247px;
+			height: 340px;
+			&:hover {
+				.slider-slide__img {
+					opacity: .5;
+				}
+				.icon-loupe {
+					opacity: 1;
+				}
+			}
+			&__img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			.icon-loupe {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				opacity: 0;
+			}
+		}
+	}
+	.arrows {
+		margin-bottom: 34px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		flex-direction: row-reverse;
+	}
+	.arrow {
+		margin: 0 14px;
+	}
+}

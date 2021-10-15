@@ -1,0 +1,40 @@
+mixin videos-section(blockTitle,blockText,blockTitle2,blockText2)
+	section.videos-section
+		+section-shape
+		.container
+			.videos-section-row.videos-section-row_top
+				.videos-section-left
+					.block-title !{blockTitle}
+					.block-text !{blockText}
+				.videos-section-right
+					+videos-section-shape
+					+img('videos-section','shape','videos-section__shapeimg','2')
+					a.video-btn(href="#")
+						.video-btn__inner
+			.videos-section-row.videos-section-row_bottom
+				.videos-section-left
+					.video
+						+img('videos-section','img','video__img','1')
+						a.video-btn(href="#")
+							.video-btn__inner
+				.videos-section-right
+					.block-title !{blockTitle2}
+					.block-text !{blockText2}
+					form.form(action="#")
+						.form-group
+							.form-item
+								input.form__field(type="tel" placeholder="Ваш телефон" name="videos-section_tel")
+							.form-controls
+								button.btn.form__submit(type="submit") Получить
+							.form-item
+								.form__text * Нажимая кнопку, вы соглашаетесь <br> с условиями <a href="#">политики конфиденциальности</a>
+						.form-group
+							label.checkbox(for="finishing-balcony-viber")
+								input.checkbox__input#finishing-balcony-viber(type="checkbox", name="finishing-balcony-viber")
+								.checkbox__title Viber
+							label.checkbox(for="finishing-balcony-whatsapp")
+								input.checkbox__input#finishing-balcony-whatsapp(type="checkbox", name="finishing-balcony-whatsapp")
+								.checkbox__title Whatsapp
+							label.checkbox(for="finishing-balcony-telegram")
+								input.checkbox__input#finishing-balcony-telegram(type="checkbox", name="finishing-balcony-telegram")
+								.checkbox__title Telegram

@@ -1,0 +1,252 @@
+.mainblock {
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&-left {
+		width: 44%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+		@include max-screen(1600px) {
+			width: 60%;
+		}
+		@include max-screen(1200px) {
+			padding-right: 15px;
+		}
+		@include max-screen(700px) {
+			width: 100%;
+			margin-bottom: 15px;
+			background: #fff;
+			padding: 20px 15px;
+			align-items: center;
+			text-align: center;
+			border-radius: 15px;
+		}
+	}
+	&-right {
+		width: 56%;
+		display: flex;
+		align-items: center;
+		@include max-screen(1600px) {
+			width: 40%;
+		}
+		@include max-screen(700px) {
+			width: 100%;
+		}
+	}
+	&__title {
+		font-size: 45px;
+		font-weight: 700;
+		margin-bottom: 15px;
+		@include max-screen(1600px) {
+			font-size: 35px;
+		}
+		@include max-screen(1200px) {
+			font-size: 28px;
+		}
+		@include max-screen(599px) {
+			font-size: 24px;
+		}
+		&_small {
+			font-size: 35px;
+			@include max-screen(1600px) {
+				font-size: 28px;
+			}
+			@include max-screen(1200px) {
+				font-size: 24px;
+			}
+			@include max-screen(599px) {
+				font-size: 21px;
+			}
+		}
+	}
+	&-price {
+		margin-bottom: 15px;
+		font-weight: 700;
+		&__text {
+			font-size: 20px;
+			display: inline-block;
+			@include max-screen(1600px) {
+				font-size: 16px;
+			}
+		}
+		&__num {
+			display: inline-block;
+			font-size: 55px;
+			@include max-screen(1600px) {
+				font-size: 40px;
+			}
+			@include max-screen(1200px) {
+				font-size: 35px;
+			}
+		}
+	}
+	&__text {
+		font-size: 20px;
+		margin-bottom: 40px;
+		line-height: 1.4;
+		@include max-screen(1600px) {
+			font-size: 18px;
+		}
+		@include max-screen(599px) {
+			font-size: 14px;
+		}
+		b {
+			color: $orange;
+		}
+	}
+	&-line {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		@include max-screen(700px) {
+			justify-content: center;
+		}
+		.mainblock__text {
+			margin: 0 30px 0 0;
+			@include max-screen(1200px) {
+				display: none;
+			}
+		}
+	}
+	&-items {
+		margin-top: 16px;
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		@include max-screen(1200px) {
+			display: none;
+		}
+	}
+	&-item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 10px;
+			margin-right: 20px;
+		}
+		&__num {
+			width: 51px;
+			height: 51px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-weight: 700;
+			font-weight: 800;
+			font-size: 16px;
+			background: $border;
+			border-radius: 100%;
+			margin-bottom: 20px;
+			margin-left: 10px;
+			position: relative;
+			z-index: 2;
+			@include max-screen(1600px) {
+				font-size: 14px;
+			}
+		}
+		&:before {
+			content: '';
+			display: block;
+			background: $lightGray;
+			width: 71px;
+			height: 71px;
+			position: absolute;
+			left: 0;
+			top: -10px;
+			z-index: 1;
+			border-radius: 100%;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 13px;
+			height: 13px;
+			background: $lightGray;
+			left: 78px;
+			top: 20px;
+			border-radius: 100%;
+		}
+		&__text {
+			font-size: 18px;
+			@include max-screen(1600px) {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 85px 0 65px;
+		z-index: 1;
+		min-height: 651px;
+		@include max-screen(1600px) {
+			padding: 50px 0;
+			min-height: 500px;
+		}
+		@include max-screen(1300px) {
+			padding: 50px 15px;
+		}
+		@include max-screen(700px) {
+			padding: 25px 15px;
+		}
+	}
+	&-shape {
+		display: block;
+		position: absolute;
+		right: 50%;
+		bottom: 0;
+		height: 100%;
+		z-index: -1;
+		@include max-screen(1600px) {
+			right: 40%;
+		}
+		@include max-screen(700px) {
+			display: none;
+		}
+	}
+	.form {
+		max-width: 253px;
+		width: 100%;
+		margin: 0 auto;
+		&-wrap {
+			margin-left: auto;
+			background: rgba(255, 255, 255, 0.85);
+			border-radius: 15px;
+			padding: 38px 25px;
+			width: 367px;
+			@include max-screen(1200px) {
+				width: 100%;
+			}
+		}
+		&-title {
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 700;
+			font-size: 30px;
+			margin-bottom: 30px;
+			span {
+				color: $orange;
+			}
+		}
+		&-item {
+			width: 100%;
+			margin-bottom: 9px;
+		}
+		&-group {
+			margin-bottom: 30px;
+		}
+		&-controls {
+			margin-bottom: 18px;
+		}
+		&__text {
+			text-align: center;
+		}
+	}
+}

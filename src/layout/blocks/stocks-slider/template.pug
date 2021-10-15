@@ -1,0 +1,38 @@
+mixin stocks-slider(blockTitle)
+	section.stocks-slider
+		.container
+			.block-title !{blockTitle}
+			.inner
+				+slider-arrows
+				.slider-wrap.swiper-container
+					.slider.swiper-wrapper
+						a.slider-slide.swiper-slide(href="#")
+							+img('stocks-slider', 'img1', 'slider-slide__img', '1')
+							.slider-slide-inner 
+								.slider-slide__subtitle Только в январе
+								.slider-slide__title Теплый подставочный профиль в подарок
+								.slider-slide__link Подробнее
+						a.slider-slide.swiper-slide(href="#")
+							+img('stocks-slider', 'img2', 'slider-slide__img', '1')
+							.slider-slide-inner
+								.slider-slide__subtitle Только в январе
+								.slider-slide__title Скидка 30% на работы по установке оконе под ключ
+								.slider-slide__link Подробнее
+						a.slider-slide.swiper-slide(href="#")
+							+img('stocks-slider', 'img3', 'slider-slide__img', '1')
+							.slider-slide-inner 
+								.slider-slide__subtitle Только в январе
+								.slider-slide__title Скидка 30% на укреплении при заказе комплекса работ на балконе под ключ
+								.slider-slide__link Подробнее
+						a.slider-slide.swiper-slide(href="#")
+							+img('stocks-slider', 'img4', 'slider-slide__img', '1')
+							.slider-slide-inner 
+								.slider-slide__subtitle Только в январе
+								.slider-slide__title Детская защита в подарок
+								.slider-slide__link Подробнее
+						a.slider-slide.swiper-slide(href="#")
+							+img('stocks-slider', 'img1', 'slider-slide__img', '1')
+							.slider-slide-inner 
+								.slider-slide__subtitle Только в январе
+								.slider-slide__title Детская защита в подарок
+								.slider-slide__link Подробнее

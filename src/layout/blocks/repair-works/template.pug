@@ -1,0 +1,49 @@
+mixin repair-works(blockTitle)
+	section.repair-works
+		.container
+			.block-title !{blockTitle}
+			+repair-works-shape
+			+section-shape
+			.inner
+				ul.repair-works-nav
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw1')
+							.repair-works-nav__link-text Остекление балкона
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw2')
+							.repair-works-nav__link-text Объединение комнаты и балкона
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw3')
+							.repair-works-nav__link-text Вынос балкона
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw4')
+							.repair-works-nav__link-text Укладка пола
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw5')
+							.repair-works-nav__link-text Кладка стен
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw6')
+							.repair-works-nav__link-text Монтаж крыши балкона
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw7')
+							.repair-works-nav__link-text Отделка и облицовка
+					li.repair-works-nav-item
+						a.repair-works-nav__link(href="#") 
+							.repair-works-nav__link-icon
+								+icon('rw8')
+							.repair-works-nav__link-text И другие виды работ
+				+img('repair-works', 'balcon', 'repair-works__img', '1')
