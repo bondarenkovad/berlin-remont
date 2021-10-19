@@ -58,6 +58,25 @@ body {
 	}
 }
 
+.btn-invert {
+	display: inline-block;
+	text-decoration: none;
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	font: 800 14px/18px 'Tahoma';
+	color: #2C2C2C;
+	cursor: pointer;
+	border: 1px solid #2C2C2C;
+	transition: all 0.3s;
+	&:hover,
+	&:focus {
+		color: #ED5A27;
+		border-color: #ED5A27;
+	}
+}
+
 section {
 	margin-bottom: 60px;
 	@include max-screen(1200px) {
@@ -75,7 +94,22 @@ section {
 }
 
 .red-list {
-
+	margin-bottom: 40px;
+	&__item {
+		position: relative;
+		padding-left: 20px;
+		margin-bottom: 10px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 0;
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background: #ED5A27;
+		}
+	}
 }
 
 

@@ -76,6 +76,14 @@
 		@include max-screen(640px) {
 			padding: 5px;
 		}
+		&::before {
+			content: "Ваша экономия";
+			position: absolute;
+			top: -20px;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #D1D1D1;
+		}
 	}
 	&__text {
 		font: normal 18px/20px 'Raleway';

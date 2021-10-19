@@ -1,0 +1,38 @@
+.repair-types {
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: calc(33.3% - 30px);
+        margin: 0 15px 30px;
+    }
+    &__img {
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font: 700 20px/26px 'Raleway';
+        margin-bottom: 10px;
+    }
+    &__price {
+        font: 700 18px/24px 'Tahoma';
+        color: #74B7EF;
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-bottom: 40px;
+    }
+    &__btn-wrapper {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & a {
+            width: calc(50% - 10px);
+        }
+    }
+}
