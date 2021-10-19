@@ -2,7 +2,7 @@ body {
 	background: #fff;
 	overflow-x: hidden;
 	@include scroll(10px, null, $lightGray2, $lightGray, null, null);
-	font: normal 14px/22px 'Raleway';
+	font: normal 14px/18px 'Raleway';
 }
 
 .container {
@@ -60,7 +60,24 @@ body {
 
 section {
 	margin-bottom: 60px;
+	@include max-screen(1200px) {
+		margin-bottom: 30px;
+	}
 }
+
+.section__title {
+	font: 700 24px/30px 'Raleway';
+	margin-bottom: 20px;
+	@include max-screen(480px) {
+		font: 700 20px/24px 'Raleway';
+		text-align: center;
+	}
+}
+
+.red-list {
+
+}
+
 
 //
 //.block-title {
