@@ -9,7 +9,7 @@ body {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
-	@include max-screen(1200px) {
+	@include max-screen(1260px) {
 		padding: 0 15px;
 	}
 }
@@ -18,6 +18,48 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+
+.form {
+	&__field {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	&__input {
+		width: 100%;
+		padding: 20px;
+		background: #fff;
+		color: #000;
+		border-radius: 5px;
+		&::placeholder {
+			color: #B1B1B1;
+			text-align: center;
+		}
+	}
+	&__submit {
+		width: 100%;
+	}
+}
+
+.btn {
+	display: inline-block;
+	background: #ED5A27;
+	border-radius: 5px;
+	padding: 20px;
+	text-align: center;
+	font: 800 14px/18px 'Tahoma';
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all 0.3s;
+	&:hover,
+	&:focus {
+		color: #ededed;
+	}
+}
+
+section {
+	margin-bottom: 60px;
 }
 
 //
