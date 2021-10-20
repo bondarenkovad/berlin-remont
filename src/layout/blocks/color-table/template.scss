@@ -1,0 +1,34 @@
+.color-table {
+  &__table {
+    font-size: 16px;
+    width: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    margin: 0 -7px;
+  }
+  &__col {
+    padding: 0 7px;
+    &--md {
+      width: width(1200, 346);
+    }
+    &--sm {
+      width: width(1200, 289);
+    }
+  }
+}
+.color-card {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+
+  &__head {
+    @include value("padding-top", 15, 25);
+    @include value("padding-bottom", 15, 25);
+    @include value("padding-left", 15, 50);
+    @include value("padding-right", 15, 50);
+    background: #ed5a27;
+    border-radius: 5px;
+    color: #fff;
+    min-height: 86px;
+    vertical-align: bottom;
+  }
+}

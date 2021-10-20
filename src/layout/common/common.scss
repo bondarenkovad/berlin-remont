@@ -1,22 +1,14 @@
 // Components
-@import
-	"../components/scss/reset.scss",
-	"../components/scss/vars.scss",
-	"../components/scss/mixin.scss",
-	"../components/scss/project-mixin.scss",
-	"../components/scss/media.scss",
-	"../components/scss/buttons.scss",
-	"../components/scss/general.scss",
-	"../components/scss/text-container.scss"
-;
+@import "../components/scss/reset.scss", "../components/scss/vars.scss",
+  "../components/scss/mixin.scss", "../components/scss/project-mixin.scss",
+  "../components/scss/media.scss", "../components/scss/buttons.scss",
+  "../components/scss/general.scss", "../components/scss/text-container.scss";
 
 // Blocks
-@import
-
-	"../blocks/mainblock/template.scss",
-	"../blocks/why-we/template.scss",
-	"../blocks/seo-block/template.scss",
-	"../blocks/repair-types/template.scss",
-	"../blocks/apartments/template.scss",
-	"../blocks/measurement-form/template.scss"
-	;
+@import "../blocks/mainblock/template.scss", "../blocks/why-we/template.scss",
+  "../blocks/seo-block/template.scss", "../blocks/repair-types/template.scss",
+  "../blocks/apartments/template.scss",
+  "../blocks/measurement-form/template.scss";
+@import "../blocks/mainblock/template.scss", "../blocks/why-we/template.scss",
+  "../blocks/seo-block/template.scss", "../blocks/repair-types/template.scss",
+  "../blocks/color-table/template.scss";
