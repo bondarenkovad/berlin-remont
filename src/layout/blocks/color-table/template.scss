@@ -1,7 +1,9 @@
 .color-table {
+  @include value("font-size", 14, 16);
   &__table {
     font-size: 16px;
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
   &__wrapper {
     display: flex;
@@ -11,24 +13,45 @@
     padding: 0 7px;
     &--md {
       width: width(1200, 346);
+      min-width: 346px;
     }
     &--sm {
       width: width(1200, 289);
+      text-align: center;
+      min-width: 290px;
     }
   }
 }
 .color-card {
+  border-radius: 5px 5px 0 0;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 
-  &__head {
+  &__item {
     @include value("padding-top", 15, 25);
     @include value("padding-bottom", 15, 25);
     @include value("padding-left", 15, 50);
     @include value("padding-right", 15, 50);
-    background: #ed5a27;
-    border-radius: 5px;
-    color: #fff;
     min-height: 86px;
     vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    &:nth-child(even) {
+      background: #dff0fe;
+    }
+    &--head {
+      background: #ed5a27;
+      color: #fff;
+      border-radius: 5px;
+    }
+    &--center {
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .color-table {
+    &__wrapper {
+      overflow-x: auto;
+    }
   }
 }
