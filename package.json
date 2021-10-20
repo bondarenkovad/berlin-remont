@@ -36,5 +36,9 @@
     "vinyl-buffer": "^1.0.1",
     "webpack": "^5.25.0",
     "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-slider": "^1.8.2"
   }
 }

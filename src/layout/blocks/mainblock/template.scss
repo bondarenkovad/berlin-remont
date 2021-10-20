@@ -76,13 +76,11 @@
 		@include max-screen(640px) {
 			padding: 5px;
 		}
-		&::before {
-			content: "Ваша экономия";
-			position: absolute;
-			top: -20px;
-			left: 50%;
-			transform: translateX(-50%);
-			color: #D1D1D1;
+	}
+	&__legend {
+		text-align: center;
+		span {
+			padding: 0 10px;
 		}
 	}
 	&__text {

@@ -5,23 +5,38 @@
         margin: 0 -15px;
     }
     &__card {
-        display: flex;
+        display: flex!important;
         flex-direction: column;
         width: calc(33.3% - 30px);
         margin: 0 15px 30px;
+        @include max-screen(991px) {
+            height: 100%;
+        }
     }
     &__img {
         border-radius: 5px;
         margin-bottom: 20px;
+        @include max-screen(640px) {
+            height: 250px;
+        }
+        @include max-screen(480px) {
+            height: 200px;
+        }
     }
     &__title {
         font: 700 20px/26px 'Raleway';
         margin-bottom: 10px;
+        @include max-screen(640px) {
+            text-align: center;
+        }
     }
     &__price {
         font: 700 18px/24px 'Tahoma';
         color: #74B7EF;
         margin-bottom: 10px;
+        @include max-screen(640px) {
+            text-align: center;
+        }
     }
     &__text {
         margin-bottom: 40px;
@@ -31,8 +46,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include max-screen(360px) {
+            flex-direction: column;
+        }
         & a {
             width: calc(50% - 10px);
+            @include max-screen(360px) {
+                width: 100%;
+                margin-bottom: 10px;
+            }
         }
     }
 }

@@ -46,6 +46,7 @@ const path = {
 		compile: './src/layout/common/*.{scss,sass}',
 		result: './app/css/',
 		libs: [
+			'./node_modules/slick-slider/slick/slick.css', // slick-slider
 			'./src/assets/libs/swiper/swiper-bundle.min.css', // slider
 			'./src/assets/libs/tingle-master/tingle.min.css', // modal windows
 			'./src/assets/libs/spotlight/spotlight.min.css', // gallery like fancybox
@@ -57,8 +58,9 @@ const path = {
 		compile: './src/layout/common/*.js',
 		result: './app/js/',
 		libs: [
+			'./node_modules/jquery/dist/jquery.min.js', // jquery
+			'./src/assets/libs/slick-slider/slick.min.js', // slick-slider
 			'./src/assets/libs/Inputmask/inputmask.min.js', // telephone mask
-			'./src/assets/libs/swiper/swiper-bundle.min.js', // slider
 			'./src/assets/libs/tingle-master/tingle.min.js', // modal windows
 			'./src/assets/libs/spotlight/spotlight.min.js', // gallery like fancybox
 			'./src/assets/libs/beerslider/BeerSlider.js' // before-after slider
