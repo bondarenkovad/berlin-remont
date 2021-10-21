@@ -394,7 +394,7 @@ const watchFiles = () => {
   watch(path.styles.whatch, styleCompiller);
   watch(path.styles.libs, cssLibs);
   watch(path.images.source, transferImg);
-  watch(path.images.source, generateWebp);
+ // watch(path.images.source, generateWebp);
   // watch(path.images.pngSource, generatePngSprite);
   watch(path.images.svgSource, generateSvgSprite);
   watch(path.favicon.source, transferFavicon);
@@ -416,7 +416,7 @@ exports.default = series(
     cssLibs,
     jsLibs,
     transferImg,
-    generateWebp,
+    // generateWebp,
     transferFavicon,
     transferFiles,
     generateSvgSprite,
