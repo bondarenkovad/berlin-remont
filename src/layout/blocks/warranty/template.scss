@@ -1,0 +1,15 @@
+.warranty {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+	color: #fff;
+	&__text {
+		max-width: 800px;
+		margin:  0 auto;
+		text-align: center;
+		@include max-screen(360px) {
+			text-align: justify;
+		}
+	}
+}

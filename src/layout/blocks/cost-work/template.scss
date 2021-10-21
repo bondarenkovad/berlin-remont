@@ -1,0 +1,63 @@
+.cost-work {
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+	&__card {
+		width: calc(25% - 10px);
+		margin: 0 5px 10px;
+		background: #F2F6FA;
+		border-radius: 5px;
+		padding: 30px;
+	}
+	&__img-wrapper {
+		position: relative;
+		margin-bottom: 30px;
+		height: 80px;
+	}
+	&__img {
+		max-height: 100%;
+		object-fit: cover;
+	}
+	&__title {
+		font: 800 16px/20px  'Raleway';
+		margin-bottom: 5px;
+	}
+	&__price {
+		font: 800 16px/19px 'Raleway';
+		color: #4975CB;
+		margin-bottom: 10px;
+	}
+	.red-list {
+		margin-bottom: 0;
+	}
+}
+.consultation {
+	position: relative;
+	background: #4975CB;
+	border-radius: 5px;
+	width: calc(50% - 10px);
+	padding: 50px;
+	margin-bottom: 10px;
+	&__content {
+		max-width: 200px;
+		color: #fff;
+	}
+	&__title {
+		font: 800 42px/46px 'Raleway';
+		margin-bottom: 5px;
+	}
+	&__text {
+		margin-bottom: 30px;
+	}
+	.btn {
+		width: 100%;
+	}
+	&__img {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+}
