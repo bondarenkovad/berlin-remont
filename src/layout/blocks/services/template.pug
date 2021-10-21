@@ -1,0 +1,30 @@
+mixin services(text)
+	- var control = [ 'Фитнес-клубы', 'Нежилые','Медицинские клиники', 'Стоматология', 'Салон красоты', 'Гостиница, отель, хостел', 'Кафе и ресторан', 'Магазин', 'Cкладские помещения'];
+	section.section.container
+		.services
+			h2.section__title Цены по типу коммерческих помещений 
+			.services__subtitle Бюджеты на обустройство разных типов коммерческих интерьеров отличается. Например, торговые площади, как правило, обходятся дешевле из-за упрощенных конструкций. Отремонтировать ресторан будет дороже из-за дороговизны устройства кухонного пространства. В отделке медицинского помещения необходимо учитывать повышенные санитарные требования, что увеличивает цену.
+			.services__body
+				.services__row
+					.services__col.services__col--control
+						button(data-tab='Ремонт квартир').services__btn._active Аптеки
+						each item in control 
+							button(data-tab=item).services__btn=item
+					.services__col.services__col--view
+						div(style={'background-image':'url(img/services/services-item.jpg)'} data-tab='Ремонт квартир').services__view._active
+							.services__layer
+								.services__title Аптеки
+								.services__price От 1800 руб. м2
+								.services__descr Выполняется декоративная отделка помещения без<br/> изменений в планировке и инженерных<br/> коммуникациях.
+								a(href="#").services__link Консультация
+						each item in control
+							div(style={'background-image':'url(img/services/services-item-1.jpg)'} data-tab=item).services__view
+								.services__layer
+									.services__title=item
+									.services__price От 1800 руб. м2
+									.services__descr Выполняется декоративная отделка помещения без<br/> изменений в планировке и инженерных<br/> коммуникациях.
+									a(href="#").services__link 
+										.btn-angle.btn-angle--small
+											.btn-angle__front.btn-angle__front--warning.btn-angle__front--small Подробнее
+											.btn-angle__back.btn-angle__back--white.btn-angle__back--small
+
