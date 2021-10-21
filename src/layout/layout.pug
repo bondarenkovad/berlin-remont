@@ -1,7 +1,7 @@
 include components/pug/vars.pug
 include components/pug/mixin.pug
 include components/pug/project-mixin.pug
-
+include blocks/services/template.pug
 doctype
 html
 	block head
@@ -19,7 +19,8 @@ html
 			include blocks/apartments/template.pug
 			include blocks/measurement-form/template.pug
 			include blocks/color-table/template.pug
-
+			include blocks/price-list/template.pug
+			+services('02','Наши услуги')
 
 
 		block foot

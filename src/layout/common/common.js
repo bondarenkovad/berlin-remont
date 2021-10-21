@@ -1,5 +1,6 @@
 import { repairTypes } from "../blocks/repair-types/templates";
 import { apartments } from "../blocks/apartments/template";
+import "../blocks/services/template";
 // import { contact } from "../blocks/contact/template.js";
 // import { beforeAfter } from "../blocks/before-after/template.js";
 // import { infoCards } from "../blocks/info-cards/template.js";
@@ -13,10 +14,9 @@ import { apartments } from "../blocks/apartments/template";
 // import { panorama } from "../blocks/panorama/template.js";
 // import { colorSolutions } from "../blocks/color-solutions/template.js";
 
-
-$(function() {
-	repairTypes();
-	apartments();
+$(function () {
+  repairTypes();
+  apartments();
 });
 
 //

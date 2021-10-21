@@ -31,7 +31,7 @@
     @include value("padding-bottom", 15, 25);
     @include value("padding-left", 15, 50);
     @include value("padding-right", 15, 50);
-    min-height: 86px;
+    @include value("min-height", 58, 86);
     vertical-align: bottom;
     display: flex;
     align-items: center;
