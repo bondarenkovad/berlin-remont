@@ -13,6 +13,12 @@
             height: 100%;
         }
     }
+    &__content {
+        @include max-screen(991px) {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    }
     &__img {
         border-radius: 5px;
         margin-bottom: 20px;
@@ -55,6 +61,11 @@
                 width: 100%;
                 margin-bottom: 10px;
             }
+        }
+    }
+    .slider-arrow {
+        @include max-screen(570px) {
+            top: 125px;
         }
     }
 }

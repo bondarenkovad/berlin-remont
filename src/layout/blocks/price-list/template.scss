@@ -1,6 +1,6 @@
 .price-list {
-  @include value("padding-top", 40, 100);
-  @include value("padding-bottom", 40, 100);
+  //@include value("padding-top", 40, 100);
+  //@include value("padding-bottom", 40, 100);
   &__wrapper {
     display: flex;
     flex-wrap: wrap;

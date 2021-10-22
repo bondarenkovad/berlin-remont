@@ -1,4 +1,4 @@
-import { repairTypes } from "../blocks/repair-types/templates";
+import "../blocks/repair-types/template";
 import { apartments } from "../blocks/apartments/template";
 import { gallery } from "../blocks/gallery/template";
 import "../blocks/services/template";
@@ -17,7 +17,6 @@ import "../blocks/faq/faq";
 // import { colorSolutions } from "../blocks/color-solutions/template.js";
 
 $(function () {
-  repairTypes();
   apartments();
   gallery();
 });
