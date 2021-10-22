@@ -1,0 +1,45 @@
+.contacts {
+	position: relative;
+	margin-bottom: 0;
+	&__info {
+		position: absolute;
+		right: 20%;
+		top: 0;
+		max-width: 500px;
+		height: 100%;
+		background: #fff;
+		padding: 70px 100px;
+		@include max-screen(1366px) {
+			right: 65px;
+			padding: 30px;
+		}
+		@include max-screen(1200px) {
+			right: 15px;
+		}
+		@include max-screen(991px) {
+			position: static;
+		}
+	}
+	&__text {
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		@include max-screen(480px) {
+			text-transform: lowercase;
+			text-align: center;
+		}
+	}
+	&__address {
+		font: normal 14px/18px 'Tahoma';
+		margin-bottom: 10px;
+	}
+	&__phone {
+		font: normal 14px/18px 'Tahoma';
+		color: #000;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+
+}
