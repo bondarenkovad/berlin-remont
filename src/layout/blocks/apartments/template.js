@@ -18,8 +18,4 @@ export function apartments() {
 			]
 		},
 		991);
-
-
-
-
 }

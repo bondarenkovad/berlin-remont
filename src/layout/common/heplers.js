@@ -1,7 +1,7 @@
 export function  addSliderOnResize($element, $config, $media) {
 	if (document.querySelector($element) !== null && document.querySelectorAll($element).length > 0) {
 
-		var advantagesSlider = $($element).slick($config);
+		var advantagesSlider = window.jQuery($element).slick($config);
 		window.matchMedia('(max-width:' + $media + 'px )').matches ? advantagesSlider.slick('init')  : advantagesSlider.slick('destroy');
 
 		var reInitializeSlider = function reInitializeSlider() {

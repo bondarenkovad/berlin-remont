@@ -2,6 +2,7 @@ import "../blocks/repair-types/template";
 import { apartments } from "../blocks/apartments/template";
 import { gallery } from "../blocks/gallery/template";
 import "../blocks/services/template";
+import "../blocks/projects/template";
 import "../blocks/faq/faq";
 // import { contact } from "../blocks/contact/template.js";
 // import { beforeAfter } from "../blocks/before-after/template.js";
@@ -16,7 +17,7 @@ import "../blocks/faq/faq";
 // import { panorama } from "../blocks/panorama/template.js";
 // import { colorSolutions } from "../blocks/color-solutions/template.js";
 
-$(function () {
+window.jQuery(function () {
   apartments();
   gallery();
 });

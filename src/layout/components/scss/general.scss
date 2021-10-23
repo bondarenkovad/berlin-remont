@@ -3,6 +3,7 @@ body {
 	overflow-x: hidden;
 	@include scroll(10px, null, $lightGray2, $lightGray, null, null);
 	font: normal 14px/18px 'Raleway';
+	color: #000;
 }
 
 .container {
@@ -34,13 +35,13 @@ body {
 	}
 	&__input {
 		width: 100%;
-		padding: 20px;
+		padding: 20px!important;
 		background: #fff;
-		color: #000;
-		border-radius: 5px;
+		color: #000!important;
+		height: auto!important;
+		border-radius: 5px!important;
 		&::placeholder {
-			color: #B1B1B1;
-			text-align: center;
+			color: #B1B1B1!important;
 		}
 	}
 	&__submit {
@@ -60,7 +61,7 @@ body {
 	display: inline-block;
 	background: #ED5A27;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 20px!important;
 	text-align: center;
 	font: 800 14px/18px 'Tahoma';
 	color: #FFFFFF;

@@ -40,7 +40,7 @@ const path = {
     compile: "./src/layout/common/*.{scss,sass}",
     result: "./app/css/",
     libs: [
-      "./node_modules/slick-slider/slick/slick.css", // slick-slider
+      //"./node_modules/slick-slider/slick/slick.css", // slick-slider
       "./node_modules/simplebar/dist/simplebar.min.css", //simplebar
       //"./src/assets/libs/swiper/swiper-bundle.min.css", // slider
       //"./src/assets/libs/tingle-master/tingle.min.css", // modal windows
@@ -55,7 +55,7 @@ const path = {
     libs: [
       "./node_modules/jquery/dist/jquery.min.js", // jquery
      "./src/assets/libs/slick-slider/slick.min.js", // slick-slider
-      "./src/assets/libs/Inputmask/inputmask.min.js", // telephone mask
+      //"./src/assets/libs/Inputmask/inputmask.min.js", // telephone mask
       //"./src/assets/libs/tingle-master/tingle.min.js", // modal windows
       "./src/assets/libs/spotlight/spotlight.min.js", // gallery like fancybox
       //"./src/assets/libs/beerslider/BeerSlider.js", // before-after slider
@@ -186,7 +186,7 @@ const styleCompiller = () => {
         )
       ) // compile to css and show errors
       .pipe(autoprefixer(autoprefixerOptions)) // add prefixes
-      .pipe(cleanCSS(cleanCSSOptions)) // remove garbage from css
+      //.pipe(cleanCSS(cleanCSSOptions)) // remove garbage from css
       // .pipe(sourcemaps.write('.')) // finish making styles map
       .pipe(
         rename(function (path) {
