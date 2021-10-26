@@ -1,9 +1,9 @@
 import "../blocks/repair-types/template";
 import { apartments } from "../blocks/apartments/template";
 import { gallery } from "../blocks/gallery/template";
-import "../blocks/services/template";
-import "../blocks/projects/template";
 import "../blocks/faq/faq";
+import "../blocks/services/template";
+import "../blocks/cost-work/template";
 // import { contact } from "../blocks/contact/template.js";
 // import { beforeAfter } from "../blocks/before-after/template.js";
 // import { infoCards } from "../blocks/info-cards/template.js";

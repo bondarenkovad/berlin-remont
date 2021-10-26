@@ -50,6 +50,13 @@
 	.red-list {
 		margin-bottom: 0;
 	}
+	.red-list__item{
+		line-height: 1;
+	}
+	&__content {
+		max-height: 150px;
+		overflow: auto;
+	}
 }
 .consultation {
 	position: relative;
