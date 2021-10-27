@@ -41,7 +41,7 @@ const path = {
     result: "./app/css/",
     libs: [
       "./node_modules/slick-slider/slick/slick.css", // slick-slider
-      //"./node_modules/simplebar/dist/simplebar.min.css", //simplebar
+      "./node_modules/simplebar/dist/simplebar.min.css", //simplebar
       //"./src/assets/libs/swiper/swiper-bundle.min.css", // slider
       //"./src/assets/libs/tingle-master/tingle.min.css", // modal windows
       "./src/assets/libs/spotlight/spotlight.min.css", // gallery like fancybox
