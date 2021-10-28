@@ -3,22 +3,23 @@ import SimpleBar from "simplebar";
 document.addEventListener("DOMContentLoaded", function (event) {
 	const commentElements = document.querySelectorAll(".comments__text");
 
+
 	for (let index = 0; index < commentElements.length; index++) {
 		new SimpleBar( commentElements[index], {
 			autoHide: false,
 		});
 	}
 
+	// let activeSlide = document.querySelector('.projects__slide.slick-active');
 	const projectThumbSlides = document.querySelectorAll(".projects__thumb-slide");
 	const projectMainSlides = document.querySelectorAll(".projects__main-slide");
 
 	if (projectThumbSlides.length > 0 && projectMainSlides.length > 0) {
 		let activeIndex = 0;
-
-
 		for (let index = 0; index < projectThumbSlides.length; index++) {
 			const element = projectThumbSlides[index];
 			element.addEventListener("click", function () {
+
 				element.classList.add("_active");
 				projectMainSlides[activeIndex].classList.remove('_active');
 				projectThumbSlides[activeIndex].classList.remove('_active');
@@ -41,21 +42,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	// On before slide change
 	window.jQuery('.projects__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		findActiveSlide(nextSlide);
+		//findActiveSlide(nextSlide);
 	});
 
-	function findActiveSlide($id) {
-		const currentSlider = document.querySelectorAll('.projects__slider .slick-slide');
-		//console.log(currentSlider[$id].querySelectorAll('.projects__thumb-slide'));
-		let currentThumbSlides = currentSlider[$id].querySelectorAll(".projects__thumb-slide");
-		let currentMainSlides = currentSlider[$id].querySelectorAll(".projects__main-slide");
-		for (let index = 0; index < currentThumbSlides.length; index++) {
-			currentThumbSlides[index].classList.remove('_active');
+	function resetActiveSlider(activeSlide, thumbSlides, mainSlides ) {
+		activeIndex = 0;
+		// const currentSlider = document.querySelectorAll('.projects__slider .slick-slide');
+		// //console.log(currentSlider[$id].querySelectorAll('.projects__thumb-slide'));
+		// let currentThumbSlides = currentSlider[$id].querySelectorAll(".projects__thumb-slide");
+		// let currentMainSlides = currentSlider[$id].querySelectorAll(".projects__main-slide");
+		for (let index = 0; index < thumbSlides.length; index++) {
+			thumbSlides[index].classList.remove('_active');
 		}
-		for (let index = 0; index < currentMainSlides.length; index++) {
-			currentMainSlides[index].classList.remove('_active');
+		for (let index = 0; index < mainSlides.length; index++) {
+			mainSlides[index].classList.remove('_active');
 		}
-		// currentThumbSlides[0].classList.add('_active');
+		thumbSlides[0].classList.add('_active');
 		// currentMainSlides[0].classList.add('_active');
 	}
 });

@@ -101,6 +101,19 @@
 				font: 700 18px/20px 'Tahoma';
 			}
 		}
+
+		&--window {
+			max-width: 370px;
+			text-align: left;
+			margin-bottom: 60px;
+			@include max-screen(1024px) {
+				max-width: 100%;
+				margin-bottom: 20px;
+			}
+			@include max-screen(360px) {
+				text-align: justify;
+			}
+		}
 	}
 	&__room {
 		text-align: center;
@@ -134,5 +147,45 @@
 		text-transform: lowercase;
 		text-align: center;
 		margin-bottom: 15px;
+	}
+}
+
+.icons-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__item {
+		width: calc(30% - 14px);
+		display: flex;
+		align-items: center;
+		&--sm {
+			width: calc(30% - 14px);
+		}
+		&--lg{
+			width: calc(40% - 14px);
+		}
+		@include max-screen(1024px) {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		border: 2px solid #EB5A27;
+		background: #D3ECFF;
+		flex-shrink: 0;
+		margin-right: 20px;
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+		&--svg {
+			fill: #EB5A27;
+		}
 	}
 }
