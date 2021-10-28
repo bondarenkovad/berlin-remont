@@ -1,4 +1,6 @@
 import SimpleBar from "simplebar";
+import {apartments} from "../apartments/template";
+import {gallery} from "../gallery/template";
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	const commentElements = document.querySelectorAll(".comments__text");
@@ -11,24 +13,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	}
 
 	// let activeSlide = document.querySelector('.projects__slide.slick-active');
-	const projectThumbSlides = document.querySelectorAll(".projects__thumb-slide");
-	const projectMainSlides = document.querySelectorAll(".projects__main-slide");
-
-	if (projectThumbSlides.length > 0 && projectMainSlides.length > 0) {
-		let activeIndex = 0;
-		for (let index = 0; index < projectThumbSlides.length; index++) {
-			const element = projectThumbSlides[index];
-			element.addEventListener("click", function () {
-
-				element.classList.add("_active");
-				projectMainSlides[activeIndex].classList.remove('_active');
-				projectThumbSlides[activeIndex].classList.remove('_active');
-				activeIndex = index;
-				projectMainSlides[activeIndex].classList.add('_active');
-				projectThumbSlides[activeIndex].classList.add('_active');
-			});
-		}
-	}
+	// const projectThumbSlides = document.querySelectorAll(".projects__thumb-slide");
+	// const projectMainSlides = document.querySelectorAll(".projects__main-slide");
+	//
+	// if (projectThumbSlides.length > 0 && projectMainSlides.length > 0) {
+	// 	let activeIndex = 0;
+	// 	for (let index = 0; index < projectThumbSlides.length; index++) {
+	// 		const element = projectThumbSlides[index];
+	// 		element.addEventListener("click", function () {
+	//
+	// 			element.classList.add("_active");
+	// 			projectMainSlides[activeIndex].classList.remove('_active');
+	// 			projectThumbSlides[activeIndex].classList.remove('_active');
+	// 			activeIndex = index;
+	// 			projectMainSlides[activeIndex].classList.add('_active');
+	// 			projectThumbSlides[activeIndex].classList.add('_active');
+	// 		});
+	// 	}
+	// }
 
 	window.jQuery('.projects__slider',).slick(
 		{
@@ -40,24 +42,59 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			nextArrow: '<button type="button" class="slider-arrow slick-next"><svg viewBox="0 0 16 17" id="svg-next" xmlns="http://www.w3.org/2000/svg"><path d="M12.1382 8.17422L4.73778 0.794215C4.49531 0.552559 4.10275 0.552966 3.86069 0.795465C3.61881 1.03793 3.61944 1.43071 3.86194 1.67255L10.8219 8.61331L3.86169 15.554C3.61922 15.7959 3.61859 16.1884 3.86044 16.4309C3.98178 16.5525 4.14075 16.6133 4.29972 16.6133C4.45828 16.6133 4.61662 16.5529 4.73774 16.4322L12.1382 9.05237C12.255 8.93618 12.3206 8.77806 12.3206 8.61331C12.3206 8.44856 12.2548 8.29062 12.1382 8.17422Z"/></svg></button>',
 		});
 
-	// On before slide change
-	window.jQuery('.projects__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		//findActiveSlide(nextSlide);
-	});
 
-	function resetActiveSlider(activeSlide, thumbSlides, mainSlides ) {
-		activeIndex = 0;
-		// const currentSlider = document.querySelectorAll('.projects__slider .slick-slide');
-		// //console.log(currentSlider[$id].querySelectorAll('.projects__thumb-slide'));
-		// let currentThumbSlides = currentSlider[$id].querySelectorAll(".projects__thumb-slide");
-		// let currentMainSlides = currentSlider[$id].querySelectorAll(".projects__main-slide");
-		for (let index = 0; index < thumbSlides.length; index++) {
-			thumbSlides[index].classList.remove('_active');
+
+	// function resetActiveSlider(activeSlide, thumbSlides, mainSlides ) {
+	// 	activeIndex = 0;
+	// 	// const currentSlider = document.querySelectorAll('.projects__slider .slick-slide');
+	// 	// //console.log(currentSlider[$id].querySelectorAll('.projects__thumb-slide'));
+	// 	// let currentThumbSlides = currentSlider[$id].querySelectorAll(".projects__thumb-slide");
+	// 	// let currentMainSlides = currentSlider[$id].querySelectorAll(".projects__main-slide");
+	// 	for (let index = 0; index < thumbSlides.length; index++) {
+	// 		thumbSlides[index].classList.remove('_active');
+	// 	}
+	// 	for (let index = 0; index < mainSlides.length; index++) {
+	// 		mainSlides[index].classList.remove('_active');
+	// 	}
+	// 	thumbSlides[0].classList.add('_active');
+	// 	// currentMainSlides[0].classList.add('_active');
+	// }
+});
+
+
+window.jQuery(function ($) {
+	const $projectSection = $('.projects');
+
+	if($projectSection.length) {
+		addActiveSlide($projectSection);
+		var $thumbSlide = $projectSection.find('.projects__thumb-slide');
+
+		$thumbSlide.on('click', function () {
+
+			$(this)
+				.addClass('_active')
+				.siblings('.projects__thumb-slide').removeClass('_active')
+				.parents('.projects__left')
+				.find('.projects__main-slide').eq($(this).index()).addClass('_active')
+				.siblings('.projects__main-slide').removeClass('_active');
+		});
+
+		// On before slide change
+		window.jQuery('.projects__slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+			let $nextSlide = $projectSection.find('.projects__slide.slick-active');
+			addActiveSlide(null, $nextSlide);
+		});
+
+		function addActiveSlide($projectSection = null, activeSlide = null) {
+			if(activeSlide) {
+				activeSlide.find('.projects__main-slide').first().addClass('_active');
+				activeSlide.find('.projects__thumb-slide').first().addClass('_active');
+			}
+
+			if($projectSection) {
+				$projectSection.find('.projects__main-slide').first().addClass('_active');
+				$projectSection.find('.projects__thumb-slide').first().addClass('_active');
+			}
 		}
-		for (let index = 0; index < mainSlides.length; index++) {
-			mainSlides[index].classList.remove('_active');
-		}
-		thumbSlides[0].classList.add('_active');
-		// currentMainSlides[0].classList.add('_active');
 	}
 });
