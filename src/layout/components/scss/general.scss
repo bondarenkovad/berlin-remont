@@ -108,13 +108,10 @@ body {
 	-ms-flex-pack: center;
 	justify-content: center;
 	border: none;
-	-webkit-transition: -webkit-transform 0.3s;
-	transition: -webkit-transform 0.3s;
-	-o-transition: transform 0.3s;
 	transition: transform 0.3s;
-	transition: transform 0.3s, -webkit-transform 0.3s;
 	top: 50%;
 	z-index: 1;
+	cursor: pointer;
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);

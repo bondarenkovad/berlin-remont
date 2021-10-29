@@ -5,22 +5,12 @@ import "../blocks/faq/faq";
 import "../blocks/services/template";
 import "../blocks/cost-work/template";
 import "../blocks/projects/template";
-// import { contact } from "../blocks/contact/template.js";
-// import { beforeAfter } from "../blocks/before-after/template.js";
-// import { infoCards } from "../blocks/info-cards/template.js";
-// import { certificates } from "../blocks/certificates/template.js";
-// import { stocksSlider } from "../blocks/stocks-slider/template.js";
-// import { repairVariants } from "../blocks/repair-variants/template.js";
-// import { repairMaterial } from "../blocks/repair-materials/template.js";
-// import { windowsTabs } from "../blocks/windows-tabs/template.js";
-// import { pricesHomeTypes } from "../blocks/prices-home-types/template.js";
-// import { portfolioSection } from "../blocks/portfolio-section/template.js";
-// import { panorama } from "../blocks/panorama/template.js";
-// import { colorSolutions } from "../blocks/color-solutions/template.js";
+import "../blocks/gallery/template";
+//import "../blocks/problems/template";
+
 
 window.jQuery(function () {
   apartments();
-  gallery();
 });
 
 //
