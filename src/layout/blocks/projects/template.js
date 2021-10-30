@@ -81,20 +81,13 @@ window.jQuery(function ($) {
 
 		// On before slide change
 		window.jQuery('.projects__slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-			let $nextSlide = $projectSection.find('.projects__slide.slick-active');
-			addActiveSlide(null, $nextSlide);
+			let $nextSlide = window.jQuery(event.currentTarget).find('.projects__slide.slick-active');
+			addActiveSlide($nextSlide);
 		});
 
-		function addActiveSlide($projectSection = null, activeSlide = null) {
-			if(activeSlide) {
-				activeSlide.find('.projects__main-slide').first().addClass('_active');
-				activeSlide.find('.projects__thumb-slide').first().addClass('_active');
-			}
-
-			if($projectSection) {
-				$projectSection.find('.projects__main-slide').first().addClass('_active');
-				$projectSection.find('.projects__thumb-slide').first().addClass('_active');
-			}
+		function addActiveSlide($element) {
+			$element.find('.projects__main-slide').first().addClass('_active');
+			$element.find('.projects__thumb-slide').first().addClass('_active');
 		}
 	}
 });
