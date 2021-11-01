@@ -4,6 +4,26 @@
 	background-repeat: no-repeat;
 	margin-bottom: 0;
 	&__text {
-		margin-bottom: 60px;
+		margin-bottom: 20px;
+	}
+	&__container {
+		display: flex!important;
+		flex-wrap: wrap;
+		margin: 0 -10px 60px;
+		@include max-screen(991px) {
+			margin-bottom: 30px;
+		}
+	}
+	&__item {
+		margin: 0 10px;
+	}
+	&__img {
+		height: 175px;
+		width: 100%;
+		object-fit: cover;
+		margin-bottom: 20px;
+	}
+	&__subtitle {
+		text-align: center;
 	}
 }

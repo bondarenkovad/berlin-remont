@@ -1,6 +1,4 @@
 import SimpleBar from "simplebar";
-import {apartments} from "../apartments/template";
-import {gallery} from "../gallery/template";
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	const commentElements = document.querySelectorAll(".comments__text");
