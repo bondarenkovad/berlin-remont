@@ -11,6 +11,10 @@
   }
   &__col {
     padding: 0 7px;
+    &--lg{
+      width: width(1200, 480);
+      min-width: 480px;
+    }
     &--md {
       width: width(1200, 346);
       min-width: 346px;
@@ -20,24 +24,40 @@
       text-align: center;
       min-width: 290px;
     }
+    &--xl{
+      width: width(1200, 165);
+      min-width: 165px;
+    }
   }
 }
 .color-card {
   border-radius: 5px 5px 0 0;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  @include max-screen(920px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 
   &__item {
     @include value("padding-top", 15, 25);
     @include value("padding-bottom", 15, 25);
-    @include value("padding-left", 15, 50);
-    @include value("padding-right", 15, 50);
+    @include value("padding-left", 15, 40);
+    @include value("padding-right", 15, 40);
     @include value("min-height", 58, 86);
     vertical-align: bottom;
     display: flex;
     align-items: center;
+    @include max-screen(920px) {
+      flex-grow: 1;
+    }
     &:nth-child(even) {
       background: #dff0fe;
     }
+    &:nth-child(odd):not(:first-child){
+      background: #fff;
+    }
+
     &--head {
       background: #ed5a27;
       color: #fff;
@@ -46,6 +66,19 @@
     &--center {
       justify-content: center;
     }
+    &--upcase {
+      text-transform: uppercase;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &--img {
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 1200px) {
