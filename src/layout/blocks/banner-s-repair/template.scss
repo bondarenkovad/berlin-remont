@@ -1,0 +1,51 @@
+.banner-s {
+	position: relative;
+	&__left{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__inner {
+		position: relative;
+		background: rgba(242, 246, 250, 1);
+		padding: 60px;
+		max-width: 400px;
+		width: 480px;
+		min-height: 400px;
+		@include max-screen(991px) {
+			background: rgba(242, 246, 250, 0.9);
+			padding: 30px;
+			max-width: 100%;
+			width: 100%;
+			min-height: 300px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+		}
+		&--lg {
+			max-width: 580px;
+		}
+	}
+	&__info {
+		font: normal 14px/22px 'Raleway';
+		color: #ED5A27;
+		margin-bottom: 20px;
+	}
+	&__right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		@include max-screen(991px) {
+			width: 100%;
+		}
+	}
+}

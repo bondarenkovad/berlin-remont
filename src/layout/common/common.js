@@ -6,6 +6,7 @@ import "../blocks/cost-work/template";
 import "../blocks/projects/template";
 import "../blocks/gallery/template";
 import "../blocks/broke/template";
+import "../blocks/services-w/template";
 //import "../blocks/problems/template";
 
 
