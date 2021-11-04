@@ -115,6 +115,14 @@ body {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	&:hover,
+	&:focus {
+		transform: scale(1.1) translateY(-50%);
+	}
+	&.slick-disabled {
+		background: silver;
+		cursor: not-allowed;
+	}
 }
 .slick-slider .slick-list,
 .slick-slider .slick-track {
