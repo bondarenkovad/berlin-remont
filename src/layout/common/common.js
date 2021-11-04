@@ -1,8 +1,9 @@
-//import "../blocks/repair-types/template";
+import "../blocks/repair-types/template";
 import { apartments } from "../blocks/apartments/template";
 import "../blocks/faq/faq";
 import "../blocks/services/template";
 import "../blocks/cost-work/template";
+import "../blocks/color-table/template";
 import "../blocks/projects/template";
 import "../blocks/gallery/template";
 import "../blocks/broke/template";

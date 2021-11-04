@@ -1,6 +1,8 @@
 import SimpleBar from "simplebar";
 
 document.addEventListener("DOMContentLoaded", function (event) {
+
+
   const tabControl = document.querySelectorAll(".services__btn");
   const tabView = document.querySelectorAll(".services__view");
   if (tabControl.length > 0 && tabView.length > 0) {

@@ -1,10 +1,7 @@
 .color-table {
   @include value("font-size", 14, 16);
-  &__table {
-    font-size: 16px;
-    max-width: 100%;
-    overflow: hidden;
-  }
+  font-size: 16px;
+  max-width: 100%;
   &__wrapper {
     display: flex;
     margin: 0 -7px;
@@ -20,9 +17,9 @@
       min-width: 346px;
     }
     &--sm {
-      width: width(1200, 289);
+      width: width(1200, 279);
       text-align: center;
-      min-width: 290px;
+      min-width: 270px;
     }
     &--xl{
       width: width(1200, 165);
