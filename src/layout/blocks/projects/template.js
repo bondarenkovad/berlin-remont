@@ -2,13 +2,24 @@ import SimpleBar from "simplebar";
 
 document.addEventListener("DOMContentLoaded", function (event) {
 	const commentElements = document.querySelectorAll(".comments__text");
+	const textElements = document.querySelectorAll(".projects__text");
 
-
-	for (let index = 0; index < commentElements.length; index++) {
-		new SimpleBar( commentElements[index], {
-			autoHide: false,
-		});
+	if(textElements.length) {
+		for (let index = 0; index < textElements.length; index++) {
+			new SimpleBar( textElements[index], {
+				autoHide: false,
+			});
+		}
 	}
+
+	if(commentElements.length) {
+		for (let index = 0; index < commentElements.length; index++) {
+			new SimpleBar( commentElements[index], {
+				autoHide: false,
+			});
+		}
+	}
+
 
 	// let activeSlide = document.querySelector('.projects__slide.slick-active');
 	// const projectThumbSlides = document.querySelectorAll(".projects__thumb-slide");

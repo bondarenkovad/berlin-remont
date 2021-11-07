@@ -81,6 +81,11 @@
     color: #000;
     margin-bottom: 20px;
   }
+  &__text {
+    margin-bottom: 20px;
+    max-height: 90px;
+    overflow: auto;
+  }
 }
 .comments {
   padding-left: 20px;
@@ -111,7 +116,7 @@
   }
   &__text {
     margin-bottom: 20px;
-    max-height: 180px;
+    max-height: 90px;
     overflow: auto;
   }
 }
