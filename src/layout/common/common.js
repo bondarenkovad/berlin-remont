@@ -1,3 +1,4 @@
+import "jquery-lazy/jquery.lazy";
 import "../blocks/repair-types/template";
 import { apartments } from "../blocks/apartments/template";
 import "../blocks/faq/faq";
@@ -13,6 +14,8 @@ import "../blocks/services-w/template";
 
 window.jQuery(function () {
   apartments();
+	window.jQuery('img[data-src').Lazy({scrollDirection: 'vertical', effect: 'fadeIn',});
+
 });
 
 //
