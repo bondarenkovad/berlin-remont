@@ -19,7 +19,7 @@
             height: 300px;
         }
         @include max-screen(480px) {
-            height: auto;
+            height: 200px;
         }
     }
     &__img {

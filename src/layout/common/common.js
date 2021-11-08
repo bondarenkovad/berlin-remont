@@ -14,8 +14,7 @@ import "../blocks/services-w/template";
 
 window.jQuery(function () {
   apartments();
-	window.jQuery('img[data-src').Lazy({scrollDirection: 'vertical', effect: 'fadeIn',});
-
+	window.jQuery('img[data-src]').Lazy({scrollDirection: 'vertical', effect: 'fadeIn',});
 });
 
 //

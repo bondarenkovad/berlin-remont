@@ -108,7 +108,7 @@
 			width: 300px;
 		}
 		@include max-screen(570px) {
-			display: none;
+			display: none!important;
 		}
 	}
 

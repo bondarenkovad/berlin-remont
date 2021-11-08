@@ -53,7 +53,7 @@ const path = {
     compile: "./src/layout/common/*.js",
     result: "./app/js/",
     libs: [
-      "./node_modules/jquery/dist/jquery.min.js", // jquery
+     "./node_modules/jquery/dist/jquery.min.js", // jquery
       "./node_modules/jquery-lazy/jquery.lazy.min.js", // jquery-lazy
      "./src/assets/libs/slick-slider/slick.min.js", // slick-slider
      //"./src/assets/libs/swiper/swiper-bundle.min.js", // slider
