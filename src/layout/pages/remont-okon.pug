@@ -1,17 +1,8 @@
 //- ремонт окон
-include ../components/pug/vars.pug
-include ../components/pug/mixin.pug
-include ../components/pug/project-mixin.pug
-include ../blocks/services/template.pug
-doctype
-html
-    block head
-        head
-            include ../components/pug/meta.pug
-            include ../components/pug/links.pug
 
-            block head-info
-    body
+extends ../layout.pug
+
+block main
         main#window-repair
             include ../blocks/main-okna/template.pug
             include ../blocks/problems/template.pug
