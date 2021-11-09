@@ -1,0 +1,29 @@
+.content-block {
+  &__img {
+    width: calc(45% - 15px);
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    @include max-screen(991px) {
+      width: calc(40% - 10px);
+    }
+    @include max-screen(768px) {
+      order: 2;
+      width: 100%;
+    }
+    @include max-screen(570px) {
+      height: 250px;
+    }
+  }
+  &__content {
+    width: calc(55% - 15px);
+    @include max-screen(991px) {
+      width: calc(60% - 10px);
+    }
+    @include max-screen(768px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -9,6 +9,7 @@ import "../blocks/projects/template";
 import "../blocks/gallery/template";
 import "../blocks/broke/template";
 import "../blocks/services-w/template";
+import "../blocks/examples/template";
 //import "../blocks/problems/template";
 
 
