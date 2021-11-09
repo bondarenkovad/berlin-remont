@@ -10,6 +10,8 @@ import "../blocks/gallery/template";
 import "../blocks/broke/template";
 import "../blocks/services-w/template";
 import "../blocks/examples/template";
+import "../blocks/price-cards/template";
+import "../blocks/stages/template";
 //import "../blocks/problems/template";
 
 
