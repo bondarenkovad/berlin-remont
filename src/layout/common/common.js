@@ -12,6 +12,7 @@ import "../blocks/services-w/template";
 import "../blocks/examples/template";
 import "../blocks/price-cards/template";
 import "../blocks/stages/template";
+import "../blocks/table-f/template";
 //import "../blocks/problems/template";
 
 

@@ -1,0 +1,60 @@
+.table-f {
+  &__wrapper {
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 10px;
+    @include max-screen(640px) {
+      max-height: 175px;
+      padding-right: 10px;
+      overflow: unset;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #5E295C;
+    margin: 0 auto;
+    @include max-screen(991px) {
+      width: 800px;
+    }
+    @include max-screen(640px) {
+      width: 100%;
+      border: none;
+      & thead {
+        display: none;
+      }
+    }
+
+    td, th {
+      padding: 8px 20px;
+      border: 1px solid #5E295C;
+    }
+
+    & tr {
+      @include max-screen(640px) {
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #5E295C;
+      }
+    }
+
+    & td {
+      @include max-screen(640px) {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        &:nth-child(even) {
+          background: #edf7ff;
+        }
+      }
+      &::before {
+        @include max-screen(640px) {
+          content: attr(data-label);
+          font-weight: bold;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
