@@ -1,4 +1,5 @@
-import "jquery-lazy/jquery.lazy";
+// import "jquery-lazy/jquery.lazy";
+// import "magnific-popup/dist/jquery.magnific-popup.min";
 import "../blocks/repair-types/template";
 import { apartments } from "../blocks/apartments/template";
 import "../blocks/faq/faq";
@@ -13,12 +14,18 @@ import "../blocks/examples/template";
 import "../blocks/price-cards/template";
 import "../blocks/stages/template";
 import "../blocks/table-f/template";
+import "../blocks/project-calc/template";
 //import "../blocks/problems/template";
 
 
 window.jQuery(function () {
   apartments();
 	window.jQuery('img[data-src]').Lazy({scrollDirection: 'vertical', effect: 'fadeIn',});
+
+	window.jQuery(".js-popup-call").magnificPopup({
+		type: "inline",
+		preloader: false,
+	});
 });
 
 //

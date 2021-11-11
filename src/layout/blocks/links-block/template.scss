@@ -1,0 +1,26 @@
+.links-block {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__link {
+    border: 1px solid #EB5A27;
+    background: #fff;
+    color: #EB5A27;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: #EB5A27;
+      color: #fff;
+    }
+  }
+}

@@ -41,6 +41,7 @@ const path = {
 		result: "./app/css/",
 		libs: [
 			"./node_modules/slick-slider/slick/slick.css", // slick-slider
+			"./node_modules/magnific-popup/dist/magnific-popup.css", // magnific-popup
 			"./node_modules/simplebar/dist/simplebar.min.css", //simplebar
 			//"./src/assets/libs/swiper/swiper-bundle.min.css", // slider
 			//"./src/assets/libs/tingle-master/tingle.min.css", // modal windows
@@ -55,6 +56,7 @@ const path = {
 		libs: [
 			"./node_modules/jquery/dist/jquery.min.js", // jquery
 			"./node_modules/jquery-lazy/jquery.lazy.min.js", // jquery-lazy
+			"./node_modules/magnific-popup/dist/jquery.magnific-popup.js", // magnific-popup
 			"./src/assets/libs/slick-slider/slick.min.js", // slick-slider
 			//"./src/assets/libs/swiper/swiper-bundle.min.js", // slider
 			//"./src/assets/libs/Inputmask/inputmask.min.js", // telephone mask
