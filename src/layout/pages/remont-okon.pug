@@ -5,6 +5,7 @@ extends ../layout.pug
 block main
         main#window-repair
             include ../blocks/main-okna/template.pug
+            include ../blocks/quize/template.pug
             include ../blocks/problems/template.pug
             include ../blocks/constructions/template.pug
             include ../blocks/measurement-form/template.pug
@@ -12,9 +13,6 @@ block main
             include ../blocks/banner-s-repair/template.pug
             include ../blocks/services-w/template.pug
             include ../blocks/banner-s-dismantling/template.pug
-
-        block foot
-            include ../components/pug/scripts.pug
 
 block head-info
     +title('Remont okon page')

@@ -1,0 +1,185 @@
+section.quize.screen-box
+	.quize__wrapper
+		.quize__descr
+			.quize__descr-wrap
+				.quize__descr-top
+					.section__title Узнайте предварительную стоимость
+					.quize__note Ответив на <b>6 простых вопросов</b> за <b>1 минуту.</b>
+					//.quize__note.quize__note--offset После расчета вы получите:
+						//ul.quize__gift
+						//	li.quize__gift-item скидка до 30% за ваши ответы
+						//	li.quize__gift-item несколько вариантов сметы по вашим параметрам
+						//	li.quize__gift-item детальное описание  всех типов конструкций
+				.quize__descr-bottom
+					.quize__note.quize__note--offset Пройдя тест Вы получите 100% Гарантию лучшей цены и качественного ремонта Ваших окон
+		.quize__body
+			.quize__inner
+				.quize__panel
+					.quize__count Вопрос <span class="quize__current">1</span> из <span class="quize__total"></span>
+					.quize__dots
+				.quize__steps
+					.quize__step
+						.quize__question Куда хотите установить окна?
+						.quize__group.quize__group--large
+							label.quize__item.quize__item--large
+								.quize__img
+									input(type="radio" name="place" value="В квартиру").quize__input-hide
+									.quize__input-fake
+									img(src="img/quize/quize-1.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant В квартиру
+							label.quize__item.quize__item--large
+								.quize__img
+									input(type="radio" name="place" value="Частный дом").quize__input-hide
+									.quize__input-fake
+									img(src="img/quize/quize-2.jpg", alt="").img-full
+								.quize__choose
+
+									.quize__variant Частный дом
+					.quize__step
+						.quize__question Какие комнаты хотите остеклить?
+						.quize__group.quize__group--small
+							label.quize__item.quize__item--small
+								.quize__img
+									input(type="radio" name="room" value="Кухня").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-3.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Кухня
+							label.quize__item.quize__item--small
+								.quize__img
+									input(type="radio" name="room" value="Спальня").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-4.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Спальня
+							label.quize__item.quize__item--small
+								.quize__img
+									input(type="radio" name="room" value="Гостиная").quize__input-hide
+									.quize__input-fake
+									img( src="" data-lazy="img/quize/quize-5.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Гостиная
+							label.quize__item.quize__item--small
+								.quize__img
+									input(type="radio" name="room" value="Детская").quize__input-hide
+									.quize__input-fake
+									img( src="" data-lazy="img/quize/quize-6.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Детская
+							label.quize__item.quize__item--small
+								.quize__img
+									input(type="radio" name="room" value="Балкон/Лоджия").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-7.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Балкон/Лоджия
+					.quize__step
+						.quize__question У Вас есть точные замеры?
+						.quize__group.quize__group--large
+							label.quize__item.quize__item--large
+								.quize__img
+									input(type="radio" name="have-sizes" value="Да, есть точные замеры").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-8.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Да, есть точные замеры
+							label.quize__item.quize__item--large
+								.quize__img
+									input(type="radio" name="have-sizes" value="Нет, нужен профессиональный замер").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-9.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Нет, нужен профессиональный замер
+					.quize__step
+						.quize__question Что для вас важно помимо качества?
+						.quize__group.quize__group--small
+							label.quize__item.quize__item--medium
+								.quize__img
+									input(type="radio" name="options" value="Звукоизоляция").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-10.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Звукоизоляция
+							label.quize__item.quize__item--medium
+								.quize__img
+									input(type="radio" name="options" value="Тепло").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-11.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Тепло
+							label.quize__item.quize__item--medium
+								.quize__img
+									input(type="radio" name="options" value="Красота(цвет)").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-12.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Красота(цвет)
+							label.quize__item.quize__item--medium
+								.quize__img
+									input(type="radio" name="options" value="Другое").quize__input-hide
+									.quize__input-fake
+									img(src="" data-lazy="img/quize/quize-13.jpg", alt="").img-full
+								.quize__choose
+									.quize__variant Другое
+					.quize__step
+						.quize__question Когда планируете установку окон?
+						.quize__group.quize__group--small
+							label.quize__item.quize__item--medium
+								.quize__text-variant
+									input(type="radio" name="plans" value="В течении недели").quize__input-hide
+									.quize__input-fake
+									span 1 - 7 дней
+								.quize__choose
+									.quize__variant В течении недели
+							label.quize__item.quize__item--medium
+								.quize__text-variant
+									input(type="radio" name="plans" value="В этом месяце").quize__input-hide
+									.quize__input-fake
+									span 1 - 30 дней
+								.quize__choose
+									.quize__variant В этом месяце
+							label.quize__item.quize__item--medium
+								.quize__text-variant
+									input(type="radio" name="plans" value="В следующем месяце").quize__input-hide
+									.quize__input-fake
+									span >30 дней
+								.quize__choose
+									.quize__variant В следующем месяце
+							label.quize__item.quize__item--medium
+								.quize__text-variant
+									input(type="radio" name="plans" value="В течении полугода").quize__input-hide
+									.quize__input-fake
+									span 1-6 месяцев
+								.quize__choose
+									.quize__variant В течении полугода
+					form.quize__step
+						.quize__question Кому сообщить результаты?
+						.quize__callback
+							.quize__form
+								.quize__data
+									input(type="text" name="place" value="").quize__data-input
+									input(type="text" name="room" ).quize__data-input
+									input(type="text" name="have-sizes").quize__data-input
+									input(type="text" name="options" ).quize__data-input
+									input(type="text" name="plans").quize__data-input
+								.quize__form-group
+									input(type="text" placeholder="Ваше имя").input.quize__input
+								.quize__form-group
+									input(type="tel" placeholder="+7(___)-___-__-__").input.quize__input.quize__input--offset
+								.quize__form-group
+									button.quize__submit.btn--small.btn--danger Отправить
+							.quize__final-sentence
+								.quize__attention Поздравляем!<br/>ваша скидка:
+								.quize__discount 28%
+								img(src="" data-lazy="img/quize/quize-bg.png", alt="Окно")
+			.quize__control
+				.quize__warning Выберите один из вариантов, чтобы продолжить
+				button(type="submit").quize__btn.quize__prev
+					.quize__pointer-text Назад
+				button.quize__btn.quize__next
+					.quize__pointer-text Далее
+		//.quize__descr
+		//	.quize__result Текущая скидка: <span id='total-discount'> 12 421</span> руб
+		//.quize__body
+
