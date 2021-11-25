@@ -271,7 +271,7 @@ exports.jslibs = jsLibs;
 // Transfer images to app directory
 const transferImg = () => {
 	return src(path.images.source) // get images
-		.pipe(cache(imagemin(imageminOptions))) // generate images cache and minify them
+		//.pipe(cache(imagemin(imageminOptions))) // generate images cache and minify them
 		.pipe(
 			rename(function (path) {
 				// change path
