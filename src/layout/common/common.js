@@ -17,6 +17,7 @@ import "../blocks/stages/template";
 import "../blocks/table-f/template";
 import "../blocks/project-calc/template";
 import "../blocks/quize/template";
+import "../blocks/certified/template";
 //import "../blocks/problems/template";
 
 
